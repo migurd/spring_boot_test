@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: PrimeraApi
+  profiles:
+    active: local
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: none
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+  jackson:
+    property-naming-strategy: SNAKE_CASE
